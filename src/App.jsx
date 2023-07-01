@@ -8,7 +8,7 @@ export default function App() {
   const { theme } = useTheme();
 
   return (
-    <div className={`w-full h-screen flex flex-col gap-5 py-[2rem] px-[1rem] md:px-[4rem] lg:px-[10rem] xl:px-[20rem]
+    <div className={`w-full min-h-screen flex flex-col gap-5 py-[2rem] px-[1rem] md:px-[4rem] lg:px-[10rem] xl:px-[20rem]
       ${theme === THEME_VALUES.light ? "bg-white text-neutral-900" : "bg-[#242424] text-white"}`}>
       <Header />
       <main>
