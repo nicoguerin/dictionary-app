@@ -10,7 +10,7 @@ export default function useTheme() {
         if (prevTheme === THEME_VALUES.dark) newTheme = THEME_VALUES.light;
         else newTheme = THEME_VALUES.dark;
         setTheme(newTheme);
-        window.localStorage.setItem('theme', newTheme);
+        window.sessionStorage.setItem('theme', newTheme);
     }
 
     return { theme, modifyTheme };

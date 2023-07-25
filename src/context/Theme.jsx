@@ -5,7 +5,7 @@ export const ThemeContext = createContext();
 
 export default function ThemeProvider({ children }) {
     const [theme, setTheme] = useState(() => {
-        const storedTheme = window.localStorage.getItem('theme');
+        const storedTheme = window.sessionStorage.getItem('theme');
         if (storedTheme) return storedTheme;
         return THEME_VALUES.dark;
     });
